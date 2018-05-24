@@ -30,7 +30,7 @@ export default {
 		"confirmed": "Confirmed",
 		"copy": "Copy",
 		"custom": "Custom",
-		"customHeight": "Custom height in pixel",
+		"customHeight": "Custom height in % (vh)",
 		"customSize": "Use custom size",
 		"customWidth": "Custom width in pixel/%",
 
@@ -93,7 +93,7 @@ export default {
 		"on": "On",
 		"orientation": "Orientation",
 
-		"panelHeight": "Panel height in pixel",
+		"panelHeight": "Panel height in % (vh)",
 		"panelWidth": "Panel width in pixel",
 		"paste": "Paste",
 		"predefined": "Predefined",

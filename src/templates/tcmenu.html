@@ -28,7 +28,7 @@
 				<div class="hico-relative" ng-if="item.type==='Button'" change-background item="item" colors="colors"
 					 ng-style="
 					!item.props.isCustomSize && { 'height': '56px', 'background-color': 'rgba(1,1,1,0)' , 'color': colors.textColor}
-					||item.props.isCustomSize && { 'height': item.props.height + px, 'background-color': 'rgba(1,1,1,0)', 'color': colors.textColor}">
+					||item.props.isCustomSize && { 'height': item.props.height, 'background-color': 'rgba(1,1,1,0)', 'color': colors.textColor}">
 					<div data-tcmenu-button id="item_{{layout.qInfo.qId}}-{{item.cId}}" states="item.stateItems"
 								   active-states="item.activeStates" evaluate-states="evaluateStates" on-states-update="handleButtonStates(states, item)"
 								   default-styles="item.labelStyle"></div>
@@ -54,7 +54,7 @@
 	 ng-class="
 	{'hico-fullHeight':layout.appearance.heightSetting === 'full',
 	'hico-container-horizontal':layout.appearance.orientation==='btn-inline' && utilService.screenWidth > 767}"
-	 ng-style="layout.appearance.heightSetting === 'custom' && {'max-height': layout.appearance.height + 'px', 'color': colors.textColor, 'background-color': colors.backgroundColor} ||
+	 ng-style="layout.appearance.heightSetting === 'custom' && {'max-height': layout.appearance.height, 'color': colors.textColor, 'background-color': colors.backgroundColor} ||
 				{'color': colors.textColor, 'background-color': colors.backgroundColor}">
 	<div class="hico-horizontal-items hico-flex-textwrap" ng-repeat="item in listItemsDub track by $index" ng-if="checkExpressionCondition(item.showCondition || '')"
 		 ng-style="{

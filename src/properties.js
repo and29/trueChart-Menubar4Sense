@@ -995,10 +995,10 @@ function Properties(){
 	};
 
 	let heightItemInput = {
-		type: "integer",
+		type: "string",
 		label: translation.label.customHeight,
 		ref: "props.height",
-		defaultValue: 50,
+		defaultValue: "50px",
 		show: function ( data, layout ) {
 			return  data.props.isCustomSize && layout.layout.appearance.orientation === 'btn-block';
 		}
@@ -1021,10 +1021,10 @@ function Properties(){
 	};
 
 	let heightInput = {
-		type: "integer",
+		type: "string",
 		label: translation.label.panelHeight,
 		ref: "appearance.height",
-		defaultValue: 150,
+		defaultValue: "100%",
 		show: function ( data ) {
 			return data.appearance.orientation === 'btn-inline' && data.appearance.heightSetting === 'custom';
 		}
